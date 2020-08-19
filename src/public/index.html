@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Testing RGB</h1>
+    <div class="slidercontainer">
+        <input 
+        type="range"
+        min="0"
+        max="250"
+        step="2.5"
+        value="0"
+        id="myRange1"
+        class="sli1">
+        <p class="p1">Value Red: <span id="valueR"></span>%</p>
+    </div>
+
+    <div class="slidercontainer">
+        <input 
+        type="range"
+        min="0"
+        max="250"
+        step="2.5"
+        value="0"
+        id="myRange2"
+        class="sli2">
+        <p class="p2">Value Green: <span id="valueG"></span>%</p>
+    </div>
+
+    <div class="slidercontainer">
+        <input 
+        type="range"
+        min="0"
+        max="250"
+        step="2.5"
+        value="0"
+        id="myRange3"
+        class="sli3">
+        <p class="p3">Value Blue: <span id="valueB"></span>%</p>
+    </div>
+    <div>
+        <button 
+        id="Random"
+        class="btn btn-primary mr-3">Random</button>
+        <button 
+        id="Off"
+        class="btn btn-danger">OFF</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="controllers.js"></script>
+</body>
+</html>
